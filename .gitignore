@@ -10,4 +10,4 @@ yarn.lock
 .DS_Store
 
 # Site-related configuration
-/config
+/usr

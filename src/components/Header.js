@@ -1,8 +1,6 @@
 import React from 'react'
 import { useStaticQuery, graphql } from "gatsby"
 
-import logo from '../../config/assets/images/logo.svg'
-
 const Header = (props) => {
   const data = useStaticQuery(graphql`
     {
@@ -14,6 +12,7 @@ const Header = (props) => {
       }
     }
   `)
+  const logo = "../../" + data.site.siteMetadata.logo
   return (
     <header id="header" className="alt">
         <span className="logo"><img src={logo} alt="" /></span>
