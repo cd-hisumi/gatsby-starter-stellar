@@ -1,9 +1,8 @@
+const config = require("./config/config")
+
 module.exports = {
-  siteMetadata: {
-    title: "Gatsby Starter - Stellar by HTML5 UP",
-    author: "Hunter Chang",
-    description: "A Gatsby.js Starter based on Stellar by HTML5 UP"
-  },
+  siteMetadata: config.siteMetadata,
+
   plugins: [
     'gatsby-plugin-react-helmet',
     {
