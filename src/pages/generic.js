@@ -3,7 +3,7 @@ import Helmet from 'react-helmet'
 
 import Layout from '../components/layout'
 import HeaderGeneric from '../components/HeaderGeneric'
-import pic04 from '../assets/images/pic04.jpg'
+import pic04 from '../../config/assets/images/pic04.jpg'
 
 class Generic extends React.Component {
   render() {
