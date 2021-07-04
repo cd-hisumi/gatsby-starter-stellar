@@ -1,4 +1,5 @@
-let siteUrl = `https://cd-hisumi.github.io/`
+let siteUrl = `https://cd-hisumi.github.io`
+let contentUrl = `https://raw.githubusercontent.com/cd-hisumi/content/main`
 module.exports = {
   flags: {
     FAST_DEV: true,
@@ -13,6 +14,7 @@ module.exports = {
     description: "子どものプログラミング道場",
     excerpt: "大阪市東住吉区で不定期(隔月)開催している、子ども(小学生～高校生)のプログラミング道場です。",
     siteUrl: siteUrl,
+    contentUrl: contentUrl,
     subDomain: `cd-hisumi`,
   },
   plugins: [
@@ -26,7 +28,7 @@ module.exports = {
         background_color: '#663399',
         theme_color: '#663399',
         display: 'minimal-ui',
-        icon: 'src/assets/images/logo.svg', // This path is relative to the root of the site.
+        icon: 'content/assets/icons/logo.svg', // This path is relative to the root of the site.
       },
     },
     'gatsby-plugin-sass',
